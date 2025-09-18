@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados com Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ciência de Dados: Análise com Python</h1>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <section>
+            <h2>Introdução à Análise de Dados</h2>
+            <p>A análise de dados é o processo de inspecionar, limpar, transformar e modelar dados com o objetivo de descobrir informações úteis, informar conclusões e apoiar a tomada de decisões. Usaremos a linguagem <strong>Python</strong>, uma das ferramentas mais poderosas e populares para essa tarefa.</p>
+        </section>
+
+        <section>
+            <h2>O que vamos usar?</h2>
+            <p>Neste exemplo, você verá como usar bibliotecas essenciais para a ciência de dados em Python. Algumas das mais comuns são:</p>
+            <ul>
+                <li><strong>Pandas:</strong> Para manipulação e análise de dados estruturados.</li>
+                <li><strong>NumPy:</strong> Para computação numérica eficiente.</li>
+                <li><strong>Matplotlib/Seaborn:</strong> Para visualização de dados.</li>
+            </ul>
+        </section>
+
+        <section class="code-section">
+            <h2>Exemplo de Código Python</h2>
+            <p>Abaixo, temos um exemplo simples de como carregar um arquivo de dados usando Pandas e exibir as primeiras linhas.</p>
+            <pre><code>
+import pandas as pd
+
+# Suponha que você tenha um arquivo CSV chamado 'dados_vendas.csv'
+# Substitua 'dados_vendas.csv' pelo nome do seu arquivo
+df = pd.read_csv('dados_vendas.csv')
+
+# Exibe as 5 primeiras linhas do DataFrame
+print(df.head())
+
+# Exibe informações estatísticas sobre as colunas numéricas
+print(df.describe())
+
+# Exemplo de visualização simples com Matplotlib
+# import matplotlib.pyplot as plt
+# df['Coluna_de_Interesse'].hist()
+# plt.show()
+            </code></pre>
+        </section>
+        
+        <section>
+            <h2>Próximos Passos</h2>
+            <p>Este é apenas um ponto de partida. Você pode expandir este projeto adicionando:</p>
+            <ul>
+                <li>Gráficos interativos.</li>
+                <li>Resultados de análises mais complexas.</li>
+                <li>Uma seção de perguntas e respostas sobre os dados.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
